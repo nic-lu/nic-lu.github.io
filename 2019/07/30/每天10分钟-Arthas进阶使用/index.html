@@ -79,16 +79,19 @@
 
 
 
-<meta name="description" content="java">
-<meta property="og:type" content="website">
+<meta name="description" content="@TOC 1.基础命令help——查看命令帮助信息 cat——打印文件内容，和linux里的cat命令类似 pwd——返回当前的工作目录，和linux命令类似 cls——清空当前屏幕区域 session——查看当前会话的信息 reset——重置增强类，将被 Arthas 增强过的类全部还原，Arthas 服务端关闭时会重置所有增强过的类 version——输出当前目标 Java 进程所加载的 Ar">
+<meta property="og:type" content="article">
 <meta property="og:title" content="nic.lu的个人博客">
-<meta property="og:url" content="https://nic-lu.github.io/index.html">
+<meta property="og:url" content="https://nic-lu.github.io/2019/07/30/每天10分钟-Arthas进阶使用/index.html">
 <meta property="og:site_name" content="nic.lu的个人博客">
-<meta property="og:description" content="java">
+<meta property="og:description" content="@TOC 1.基础命令help——查看命令帮助信息 cat——打印文件内容，和linux里的cat命令类似 pwd——返回当前的工作目录，和linux命令类似 cls——清空当前屏幕区域 session——查看当前会话的信息 reset——重置增强类，将被 Arthas 增强过的类全部还原，Arthas 服务端关闭时会重置所有增强过的类 version——输出当前目标 Java 进程所加载的 Ar">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190730105541222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2N2bnRvcHV5ZWY=,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-07-30T04:22:49.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nic.lu的个人博客">
-<meta name="twitter:description" content="java">
+<meta name="twitter:description" content="@TOC 1.基础命令help——查看命令帮助信息 cat——打印文件内容，和linux里的cat命令类似 pwd——返回当前的工作目录，和linux命令类似 cls——清空当前屏幕区域 session——查看当前会话的信息 reset——重置增强类，将被 Arthas 增强过的类全部还原，Arthas 服务端关闭时会重置所有增强过的类 version——输出当前目标 Java 进程所加载的 Ar">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190730105541222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2N2bnRvcHV5ZWY=,size_16,color_FFFFFF,t_70">
 
 
 
@@ -118,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://nic-lu.github.io/">
+  <link rel="canonical" href="https://nic-lu.github.io/2019/07/30/每天10分钟-Arthas进阶使用/">
 
 
 
 
 
-  <title>nic.lu的个人博客</title>
+  <title> | nic.lu的个人博客</title>
   
 
 
@@ -143,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/30/每天10分钟-Arthas进阶使用/" itemprop="url">Untitled</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -301,9 +301,7 @@
       
 
       
-        
-          
-            <p>@<a href="Arthas-Java诊断工具">TOC</a></p>
+        <p>@<a href="Arthas-Java诊断工具">TOC</a></p>
 <h2 id="1-基础命令"><a href="#1-基础命令" class="headerlink" title="1.基础命令"></a>1.基础命令</h2><pre><code>help——查看命令帮助信息
 cat——打印文件内容，和linux里的cat命令类似
 pwd——返回当前的工作目录，和linux命令类似
@@ -353,8 +351,6 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
 <li><a href="https://alibaba.github.io/arthas/commands.html" target="_blank" rel="noopener">https://alibaba.github.io/arthas/commands.html</a></li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -371,131 +367,28 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nic-lu.github.io/2019/07/30/helloworld/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NIC LU">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nic.lu的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/30/helloworld/" itemprop="url">helloworld</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-30T12:03:06+08:00">
-                2019-07-30
-              </time>
+              <a href="/2019/07/30/helloworld/" rel="next" title="helloworld">
+                <i class="fa fa-chevron-left"></i> helloworld
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -505,10 +398,11 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -516,6 +410,10 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
 
 
           
+
+  
+
+
 
         </div>
         
@@ -536,8 +434,17 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -579,6 +486,22 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础命令"><span class="nav-number">1.</span> <span class="nav-text">1.基础命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-JVM相关"><span class="nav-number">2.</span> <span class="nav-text">2.JVM相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-class-classloader相关"><span class="nav-number">3.</span> <span class="nav-text">3.class/classloader相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-monitor-watch-trace相关"><span class="nav-number">4.</span> <span class="nav-text">4.monitor/watch/trace相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-options"><span class="nav-number">5.</span> <span class="nav-text">5.options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-管道"><span class="nav-number">6.</span> <span class="nav-text">6.管道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-后台异步任务"><span class="nav-number">7.</span> <span class="nav-text">7.后台异步任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-WebConsole"><span class="nav-number">8.</span> <span class="nav-text">8.WebConsole</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-其他特性"><span class="nav-number">9.</span> <span class="nav-text">9.其他特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-命令列表"><span class="nav-number">10.</span> <span class="nav-text">10.命令列表</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -712,6 +635,10 @@ bg——将暂停的任务放到后台执行</code></pre><h2 id="8-WebConsole"><
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
